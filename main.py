@@ -7,7 +7,7 @@ import task3_performance
 
 
 def run_task1():
-    print("\n=== Task 1: ECB vs CBC ===")
+    print("\nECB vs CBC")
 
     bmp_path = "mustang.bmp"
     ecb_out = "mustang_ecb.bmp"
@@ -32,7 +32,7 @@ def run_task1():
     axes[0].axis("off")
 
     axes[1].imshow(Image.open(ecb_out))
-    axes[1].set_title("ECB\n(yeah you can still tell it's a car)", color="#b83227", fontfamily="monospace")
+    axes[1].set_title("ECB\n(yeah you can still tell it's a mustang)", color="#b83227", fontfamily="monospace")
     axes[1].axis("off")
 
     axes[2].imshow(Image.open(cbc_out))
@@ -61,7 +61,7 @@ def run_task1():
 
 
 def run_task2():
-    print("\n=== Task 2: CBC Bit-Flipping Attack ===")
+    print("\nCBC Bit-Flipping Attack")
 
     normal_input = "You're the man now, dog"
     ct = task2_oracle_attack.submit(normal_input)
@@ -81,7 +81,7 @@ def run_task2():
 
 
 def run_task3():
-    print("\n=== Task 3: AES vs RSA performance ===")
+    print("\nAES vs RSA performance")
 
     aes_data = task3_performance.run_aes_benchmark()
     rsa_data = task3_performance.run_rsa_benchmark()
@@ -91,14 +91,9 @@ def run_task3():
 
 
 def main():
-    print("CSC-3201 Symmetric Key Cryptography Lab - running all tasks")
-
     run_task1()
     run_task2()
     run_task3()
-
-    print("\nDone - all three tasks ran without errors.")
-
 
 if __name__ == "__main__":
     main()

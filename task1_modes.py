@@ -165,7 +165,7 @@ if __name__ == "__main__":
     msg = b"Computer Security Lab - testing the ECB and CBC implementations!"
 
     assert decrypt_ecb(encrypt_ecb(msg, key), key) == msg, "ECB round-trip failed"
-    print("  ECB round-trip OK")
+    print("  ECB round-trip ok")
 
     assert decrypt_cbc(encrypt_cbc(msg, key, iv), key, iv) == msg, "CBC round-trip failed"
-    print("  CBC round-trip OK")
+    print("  CBC round-trip ok")
