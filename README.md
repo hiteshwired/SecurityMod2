@@ -2,6 +2,8 @@
 
 A hands-on implementation and empirical analysis of symmetric ciphers (AES modes, padding, bit-flipping attacks) and asymmetric performance characteristics (RSA vs. AES benchmarking).
 
+> **Academic context:** Coursework from a computer security course at Cal Poly, San Luis Obispo. All implementation and analysis code here is my own work. Shared as a portfolio reference; please do not submit it as your own for a graded assignment.
+
 ---
 
 ## 📌 Overview
